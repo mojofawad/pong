@@ -1,6 +1,6 @@
 using Godot;
 
-namespace pong;
+namespace Pong;
 
 public partial class Player : Area2D
 {
