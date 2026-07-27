@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b0nv0qmpemoof"]
+
+[ext_resource type="Script" uid="uid://so768aqpwkc4" path="res://Player.cs" id="1_xhfnw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ch6j0"]
+size = Vector2(6, 30)
+
+[node name="Player" type="Area2D" unique_id=915208854]
+script = ExtResource("1_xhfnw")
+metadata/_edit_group_ = true
+
+[node name="Paddle" type="ColorRect" parent="." unique_id=554804675]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -15.0
+offset_right = 3.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=217287692]
+shape = SubResource("RectangleShape2D_ch6j0")
