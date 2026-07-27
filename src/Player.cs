@@ -33,11 +33,10 @@ public partial class Player : Area2D
 		{
 			velocity *= Speed;
 		}
-
-
+		
 		Position += velocity * (float)delta;
 		Position = new Vector2(
-			x: Mathf.Clamp(Position.X, 0, ScreenSize.X), // this is unnecessary, but I'm not sure what I need
+			x: Mathf.Clamp(Position.X, 0, 0),
 			y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y) 
 		);
 	}
